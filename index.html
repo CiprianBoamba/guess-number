@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>RAndom Number</title>
+    <style>
+      .game-over {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card text-center">
+      <div class="card-header">
+        Guess Number
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Choose a Number</h5>
+        <p class="card-text">
+          Please choose a number between 0 and 10
+        </p>
+        <input type="number" min="1" max="10" id="guess-number" />
+        <a class="btn btn-primary guess-btn">Guess</a>
+      </div>
+      <div class="card-footer text-muted">
+        <p class="text"></p>
+      </div>
+      <div class="card w-50 mx-auto text-center game-over">
+        <div class="card-body">
+          <p class="card-text">
+            Play Again
+          </p>
+          <a class="btn btn-primary play-again">Play again</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
